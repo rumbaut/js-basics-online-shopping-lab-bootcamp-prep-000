@@ -75,3 +75,4 @@ addToCart("lemon");
 addToCart("peach");
 removeFromCart("lemon");
 viewCart();
+console.log(cart.length);
