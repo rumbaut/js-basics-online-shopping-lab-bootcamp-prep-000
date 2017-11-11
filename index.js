@@ -29,8 +29,14 @@ function viewCart() {
      for(var property in obj){
        ret +=  `${property} at $${obj[property]}`;
       // console.log(index);
-       if(index < cart.length){
+       if(index < cart.length - 1){
          ret += ', ';
+       }
+       else if (index === cart.length - 1) {
+         ret += ' and ';
+       }
+       else{
+         ret +='.'
        }
      }
    });
