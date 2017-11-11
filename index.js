@@ -60,7 +60,7 @@ function removeFromCart(item) {
     for(var property in obj){
       if(property === item){
         cart.splice(index,1);
-        delete cart[index];
+        //delete cart[index];
       }
     }
   });
