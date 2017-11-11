@@ -60,6 +60,6 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 addToCart("banana");
-addToCart("lemon");
+//addToCart("lemon");
 addToCart("peach");
 viewCart();
