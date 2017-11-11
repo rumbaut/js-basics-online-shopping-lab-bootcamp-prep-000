@@ -33,7 +33,7 @@ function viewCart() {
          ret += ', ';
        }
        else if (index === cart.length - 2) {
-         ret += cart.lengt > 2?' and ':', and ';
+         ret += cart.length > 2?' and ':', and ';
        }
        else{
          ret +='.'
