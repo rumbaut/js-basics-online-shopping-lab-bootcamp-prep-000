@@ -28,15 +28,13 @@ function viewCart() {
    cart.forEach(function(obj, index){
      for(var property in obj){
        ret +=  `${property} at $${obj[property]}`;
-       console.log(index);
+      // console.log(index);
        if(index < cart.length){
          ret += ', ';
        }
      }
    });
    console.log(ret);
-
-
   }
 }
 
