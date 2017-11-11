@@ -27,7 +27,7 @@ function viewCart() {
     var i = 1;
    cart.forEach(function(obj, index){
      for(var property in obj){
-       ret = ret + `${property} at $${obj[property]}.` + i < cart.length?',':'';
+       ret = ret + `${property} at $${obj[property]}.`;
 console.log(ret + `${property} at $${obj[property]}.`);
      }
    });
