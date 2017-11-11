@@ -24,7 +24,7 @@ function viewCart() {
   }
   else{
     var ret = `In your cart, you have `;
-
+//In your cart, you have orange at $61, pear at $21, and quince at $81.
    cart.forEach(function(obj, index){
      for(var property in obj){
        ret +=  `${property} at $${obj[property]}`;
@@ -33,7 +33,7 @@ function viewCart() {
          ret += ', ';
        }
        else if (index === cart.length - 2) {
-         ret += ' and ';
+         ret += ', and ';
        }
        else{
          ret +='.'
