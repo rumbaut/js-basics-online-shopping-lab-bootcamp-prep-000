@@ -23,11 +23,15 @@ function viewCart() {
     console.log('Your shopping cart is empty.');
   }
   else{
+    var ret = 'In your cart, you have ';
+    var i = 1;
    cart.forEach(function(obj, index){
      for(var property in obj){
-       console.log(`In your cart, you have ${property} at $${obj[property]}.`);
+       ret + = `${property} at $${obj[property]}.` + i < cart.length?',':'';
+       
      }
    });
+   console.log(ret);
 
 
   }
