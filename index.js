@@ -47,9 +47,12 @@ function viewCart() {
 function total() {
   // write your code here
   var price = 0;
-  for (var variable in object) {
-
-  }
+  cart.forEach(function(obj, index){
+    for(var property in obj){
+      price += obj[property];
+    }
+  });
+  return price;
 }
 
 function removeFromCart(item) {
@@ -60,6 +63,6 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 addToCart("banana");
-//addToCart("lemon");
+addToCart("lemon");
 addToCart("peach");
-viewCart();
+console.log(total());
