@@ -59,7 +59,7 @@ function removeFromCart(item) {
   cart.forEach(function(obj, index){
     for(var property in obj){
       if(property === item){
-        console.log(cart[index]);
+        delete cart[index];
         return cart;
       }
     }
