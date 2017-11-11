@@ -29,10 +29,10 @@ function viewCart() {
      for(var property in obj){
        ret +=  `${property} at $${obj[property]}`;
       // console.log(index);
-       if(index < cart.length - 1){
+       if(index < cart.length - 2){
          ret += ', ';
        }
-       else if (index === cart.length - 1) {
+       else if (index === cart.length - 2) {
          ret += ' and ';
        }
        else{
