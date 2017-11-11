@@ -24,7 +24,7 @@ function viewCart() {
   }
   else{
     var ret = `In your cart, you have `;
-    
+
    cart.forEach(function(obj, index){
      for(var property in obj){
        ret +=  `${property} at $${obj[property]}`;
