@@ -78,9 +78,10 @@ function placeOrder(cardNumber) {
     setCart([]);
   }*/
 }
-addToCart("banana");
+/*addToCart("banana");
 addToCart("lemon");
 addToCart("peach");
 removeFromCart("lemon");
 viewCart();
-console.log(cart.length);
+console.log(cart.length);*/
+placeOrder();
