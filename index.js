@@ -60,7 +60,6 @@ function removeFromCart(item) {
     for(var property in obj){
       if(property === item){
         delete cart[index];
-        return cart;
       }
     }
   });
