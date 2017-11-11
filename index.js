@@ -56,7 +56,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  cart.forEach(function(obj, index){
+    for(var property in obj){
+      if(property === 'itme'){
+        delete cart[index];
+        return cart;
+      }
+    }
+  });
+  return cart;
 }
 
 function placeOrder(cardNumber) {
@@ -65,4 +73,4 @@ function placeOrder(cardNumber) {
 addToCart("banana");
 addToCart("lemon");
 addToCart("peach");
-console.log(total());
+
