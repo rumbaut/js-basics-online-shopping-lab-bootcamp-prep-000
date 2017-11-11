@@ -58,7 +58,7 @@ function total() {
 function removeFromCart(item) {
   cart.forEach(function(obj, index){
     for(var property in obj){
-      if(property === 'itme'){
+      if(property === item){
         console.log(cart[index]);
         return cart;
       }
