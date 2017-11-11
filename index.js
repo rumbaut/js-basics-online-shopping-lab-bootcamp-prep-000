@@ -24,7 +24,7 @@ function viewCart() {
   }
   else{
    cart.forEach(function(obj, index){
-     for(var a in obj){
+     for(var property in obj){
        console.log(`In your cart, you have ${property} at $${obj[property]}.`);
      }
    });
@@ -48,6 +48,6 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-/*addToCart("banana");
+addToCart("banana");
 addToCart("lemon");
-viewCart();*/
+viewCart();
