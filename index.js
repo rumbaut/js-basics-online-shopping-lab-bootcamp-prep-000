@@ -33,7 +33,6 @@ function viewCart() {
          ret += ', ';
        }
      }
-     i++;
    });
    console.log(ret);
 
