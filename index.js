@@ -73,3 +73,5 @@ function placeOrder(cardNumber) {
 addToCart("banana");
 addToCart("lemon");
 addToCart("peach");
+removeFromCart('lemon');
+viewCart();
